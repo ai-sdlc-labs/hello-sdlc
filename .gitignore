@@ -1,0 +1,18 @@
+# Dependencies & build output
+node_modules/
+dist/
+coverage/
+.wrangler/
+
+# Local secrets - never commit
+.env
+.env.*
+.dev.vars
+*.pem
+
+# Personal Claude Code settings (team settings in .claude/settings.json ARE committed)
+.claude/settings.local.json
+
+# OS / editor noise
+.DS_Store
+*.log
