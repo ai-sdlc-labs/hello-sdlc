@@ -18,13 +18,13 @@ Start a new idea by copying [`TEMPLATE.md`](TEMPLATE.md) to `intent/NNNN-short-s
 
 ## Status
 
-Status follows the intent's pull requests, so no extra "flip the status" commit is needed:
+`intent.md` has no status field. The status is the state of the pull request that adds it:
 
-- **proposed**: the PR adding `intent.md` is open. Write `Status: accepted` in the file.
-  That only becomes true if the PR is merged.
-- **accepted**: a product owner approved the PR and it was merged. Every intent on `main` is accepted.
-- **rejected**: the PR was closed without merging, so nothing reaches `main`.
-- **closed**: a later PR sets `Status: closed` (done or abandoned) and says why.
+| Pull request           | Intent status |
+|------------------------|---------------|
+| open                   | proposed      |
+| merged                 | accepted      |
+| closed without merging | closed        |
 
-Every decision therefore has a reviewer, a timestamp, and a discussion thread. Per `.github/CODEOWNERS`,
-changes under `intent/` need approval from `@ai-sdlc-labs/product-owners`.
+Per `.github/CODEOWNERS`, the PR needs approval from `@ai-sdlc-labs/product-owners` before it can merge.
+So every intent on `main` is accepted, and every decision has a reviewer, a timestamp, and a discussion thread.

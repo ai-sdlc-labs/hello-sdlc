@@ -6,7 +6,6 @@
 | ID         | NNNN                                   |
 | Originator | @github-handle                         |
 | Date       | YYYY-MM-DD                             |
-| Status     | accepted <!-- true once merged; a later PR sets closed (see README) --> |
 
 ## Problem
 <!-- What hurts today and how we know it; describe the pain, not the solution. -->
