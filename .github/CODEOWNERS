@@ -1,0 +1,21 @@
+# CODEOWNERS - which role (team) must approve changes to which files.
+# Read top to bottom; the LAST matching line wins.
+# Roles come from the AI-Native SDLC Playbook; teams live in the ai-sdlc-labs org.
+
+# Default: tech leads review everything not matched below (code, tests, docs)
+*                     @ai-sdlc-labs/tech-leads
+
+# Stage 1-2 artifacts (intent.md, spec.md): the product owner decides WHAT we build
+/intent/              @ai-sdlc-labs/product-owners
+
+# Institutional knowledge and review policy for the agent
+/CLAUDE.md            @ai-sdlc-labs/tech-leads
+/REVIEW.md            @ai-sdlc-labs/tech-leads
+
+# Agent guardrails: settings, hooks, subagents
+/.claude/             @ai-sdlc-labs/platform
+# Policies encoded as skills (security, compliance)
+/.claude/skills/      @ai-sdlc-labs/policy-owners
+
+# CI/CD workflows, repo rules, and this file itself
+/.github/             @ai-sdlc-labs/platform
