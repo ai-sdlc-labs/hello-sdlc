@@ -9,7 +9,7 @@
 | Status     | proposed <!-- proposed / accepted / closed --> |
 
 ## Problem
-<!-- What hurts today, for whom, and how we know; describe the pain, not the solution. -->
+<!-- What hurts today and how we know it; describe the pain, not the solution. -->
 
 ## Proposed outcome
 <!-- What is different for users once this ships, in a sentence or two; no implementation details. -->
